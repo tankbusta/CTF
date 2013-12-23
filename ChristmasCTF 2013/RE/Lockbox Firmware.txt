@@ -1,0 +1,536 @@
+
+lockbox.cpp.o:     file format elf32-avr
+
+
+Disassembly of section .text._Z41__static_initialization_and_destruction_0ii:
+
+00000000 <_Z41__static_initialization_and_destruction_0ii>:
+   0:	81 30       	cpi	r24, 0x01	; 1
+   2:	91 05       	cpc	r25, r1
+   4:	01 f4       	brne	.+0      	; 0x6 <_Z41__static_initialization_and_destruction_0ii+0x6>
+   6:	6f 5f       	subi	r22, 0xFF	; 255
+   8:	7f 4f       	sbci	r23, 0xFF	; 255
+   a:	01 f4       	brne	.+0      	; 0xc <_Z41__static_initialization_and_destruction_0ii+0xc>
+   c:	80 e0       	ldi	r24, 0x00	; 0
+   e:	90 e0       	ldi	r25, 0x00	; 0
+  10:	63 e0       	ldi	r22, 0x03	; 3
+  12:	42 e0       	ldi	r20, 0x02	; 2
+  14:	20 e0       	ldi	r18, 0x00	; 0
+  16:	0e 94 00 00 	call	0	; 0x0 <_Z41__static_initialization_and_destruction_0ii>
+  1a:	80 e0       	ldi	r24, 0x00	; 0
+  1c:	90 e0       	ldi	r25, 0x00	; 0
+  1e:	6d e0       	ldi	r22, 0x0D	; 13
+  20:	4c e0       	ldi	r20, 0x0C	; 12
+  22:	20 e0       	ldi	r18, 0x00	; 0
+  24:	0e 94 00 00 	call	0	; 0x0 <_Z41__static_initialization_and_destruction_0ii>
+  28:	80 e0       	ldi	r24, 0x00	; 0
+  2a:	90 e0       	ldi	r25, 0x00	; 0
+  2c:	0e 94 00 00 	call	0	; 0x0 <_Z41__static_initialization_and_destruction_0ii>
+  30:	08 95       	ret
+  32:	89 2b       	or	r24, r25
+  34:	01 f4       	brne	.+0      	; 0x36 <_Z41__static_initialization_and_destruction_0ii+0x36>
+  36:	6f 5f       	subi	r22, 0xFF	; 255
+  38:	7f 4f       	sbci	r23, 0xFF	; 255
+  3a:	01 f4       	brne	.+0      	; 0x3c <_Z41__static_initialization_and_destruction_0ii+0x3c>
+  3c:	80 e0       	ldi	r24, 0x00	; 0
+  3e:	90 e0       	ldi	r25, 0x00	; 0
+  40:	0e 94 00 00 	call	0	; 0x0 <_Z41__static_initialization_and_destruction_0ii>
+  44:	80 e0       	ldi	r24, 0x00	; 0
+  46:	90 e0       	ldi	r25, 0x00	; 0
+  48:	0e 94 00 00 	call	0	; 0x0 <_Z41__static_initialization_and_destruction_0ii>
+  4c:	08 95       	ret
+
+Disassembly of section .text._GLOBAL__D_mySerial:
+
+00000000 <_GLOBAL__D_mySerial>:
+   0:	80 e0       	ldi	r24, 0x00	; 0
+   2:	90 e0       	ldi	r25, 0x00	; 0
+   4:	6f ef       	ldi	r22, 0xFF	; 255
+   6:	7f ef       	ldi	r23, 0xFF	; 255
+   8:	0e 94 00 00 	call	0	; 0x0 <_GLOBAL__D_mySerial>
+   c:	08 95       	ret
+
+Disassembly of section .text._GLOBAL__I_mySerial:
+
+00000000 <_GLOBAL__I_mySerial>:
+   0:	81 e0       	ldi	r24, 0x01	; 1
+   2:	90 e0       	ldi	r25, 0x00	; 0
+   4:	6f ef       	ldi	r22, 0xFF	; 255
+   6:	7f ef       	ldi	r23, 0xFF	; 255
+   8:	0e 94 00 00 	call	0	; 0x0 <_GLOBAL__I_mySerial>
+   c:	08 95       	ret
+
+Disassembly of section .text._Z10lightGreenv:
+
+00000000 <_Z10lightGreenv>:
+   0:	86 e0       	ldi	r24, 0x06	; 6
+   2:	60 e0       	ldi	r22, 0x00	; 0
+   4:	0e 94 00 00 	call	0	; 0x0 <_Z10lightGreenv>
+   8:	85 e0       	ldi	r24, 0x05	; 5
+   a:	61 e0       	ldi	r22, 0x01	; 1
+   c:	0e 94 00 00 	call	0	; 0x0 <_Z10lightGreenv>
+  10:	08 95       	ret
+
+Disassembly of section .text._Z8lightRedv:
+
+00000000 <_Z8lightRedv>:
+   0:	86 e0       	ldi	r24, 0x06	; 6
+   2:	61 e0       	ldi	r22, 0x01	; 1
+   4:	0e 94 00 00 	call	0	; 0x0 <_Z8lightRedv>
+   8:	85 e0       	ldi	r24, 0x05	; 5
+   a:	60 e0       	ldi	r22, 0x00	; 0
+   c:	0e 94 00 00 	call	0	; 0x0 <_Z8lightRedv>
+  10:	08 95       	ret
+
+Disassembly of section .text._Z12clearDisplayv:
+
+00000000 <_Z12clearDisplayv>:
+   0:	0f 93       	push	r16
+   2:	1f 93       	push	r17
+   4:	00 e0       	ldi	r16, 0x00	; 0
+   6:	10 e0       	ldi	r17, 0x00	; 0
+   8:	c8 01       	movw	r24, r16
+   a:	6e ef       	ldi	r22, 0xFE	; 254
+   c:	0e 94 00 00 	call	0	; 0x0 <_Z12clearDisplayv>
+  10:	c8 01       	movw	r24, r16
+  12:	61 e0       	ldi	r22, 0x01	; 1
+  14:	0e 94 00 00 	call	0	; 0x0 <_Z12clearDisplayv>
+  18:	1f 91       	pop	r17
+  1a:	0f 91       	pop	r16
+  1c:	08 95       	ret
+
+Disassembly of section .text._Z8resetpinv:
+
+00000000 <_Z8resetpinv>:
+   0:	0e 94 00 00 	call	0	; 0x0 <_Z8resetpinv>
+   4:	10 92 00 00 	sts	0x0000, r1
+   8:	10 92 00 00 	sts	0x0000, r1
+   c:	10 92 00 00 	sts	0x0000, r1
+  10:	10 92 00 00 	sts	0x0000, r1
+  14:	10 92 00 00 	sts	0x0000, r1
+  18:	10 92 00 00 	sts	0x0000, r1
+  1c:	10 92 00 00 	sts	0x0000, r1
+  20:	10 92 00 00 	sts	0x0000, r1
+  24:	08 95       	ret
+
+Disassembly of section .text._Z12incorrectEGGv:
+
+00000000 <_Z12incorrectEGGv>:
+   0:	0e 94 00 00 	call	0	; 0x0 <_Z12incorrectEGGv>
+   4:	80 e0       	ldi	r24, 0x00	; 0
+   6:	90 e0       	ldi	r25, 0x00	; 0
+   8:	60 e0       	ldi	r22, 0x00	; 0
+   a:	70 e0       	ldi	r23, 0x00	; 0
+   c:	0e 94 00 00 	call	0	; 0x0 <_Z12incorrectEGGv>
+  10:	80 e0       	ldi	r24, 0x00	; 0
+  12:	90 e0       	ldi	r25, 0x00	; 0
+  14:	60 e0       	ldi	r22, 0x00	; 0
+  16:	70 e0       	ldi	r23, 0x00	; 0
+  18:	0e 94 00 00 	call	0	; 0x0 <_Z12incorrectEGGv>
+  1c:	68 ee       	ldi	r22, 0xE8	; 232
+  1e:	73 e0       	ldi	r23, 0x03	; 3
+  20:	80 e0       	ldi	r24, 0x00	; 0
+  22:	90 e0       	ldi	r25, 0x00	; 0
+  24:	0e 94 00 00 	call	0	; 0x0 <_Z12incorrectEGGv>
+  28:	0e 94 00 00 	call	0	; 0x0 <_Z12incorrectEGGv>
+  2c:	08 95       	ret
+
+Disassembly of section .text._Z12incorrectPINv:
+
+00000000 <_Z12incorrectPINv>:
+   0:	0e 94 00 00 	call	0	; 0x0 <_Z12incorrectPINv>
+   4:	80 e0       	ldi	r24, 0x00	; 0
+   6:	90 e0       	ldi	r25, 0x00	; 0
+   8:	60 e0       	ldi	r22, 0x00	; 0
+   a:	70 e0       	ldi	r23, 0x00	; 0
+   c:	0e 94 00 00 	call	0	; 0x0 <_Z12incorrectPINv>
+  10:	80 e0       	ldi	r24, 0x00	; 0
+  12:	90 e0       	ldi	r25, 0x00	; 0
+  14:	60 e0       	ldi	r22, 0x00	; 0
+  16:	70 e0       	ldi	r23, 0x00	; 0
+  18:	0e 94 00 00 	call	0	; 0x0 <_Z12incorrectPINv>
+  1c:	68 ee       	ldi	r22, 0xE8	; 232
+  1e:	73 e0       	ldi	r23, 0x03	; 3
+  20:	80 e0       	ldi	r24, 0x00	; 0
+  22:	90 e0       	ldi	r25, 0x00	; 0
+  24:	0e 94 00 00 	call	0	; 0x0 <_Z12incorrectPINv>
+  28:	0e 94 00 00 	call	0	; 0x0 <_Z12incorrectPINv>
+  2c:	08 95       	ret
+
+Disassembly of section .text._Z10correctPINv:
+
+00000000 <_Z10correctPINv>:
+   0:	0f 93       	push	r16
+   2:	1f 93       	push	r17
+   4:	00 e0       	ldi	r16, 0x00	; 0
+   6:	10 e0       	ldi	r17, 0x00	; 0
+   8:	c8 01       	movw	r24, r16
+   a:	6a e0       	ldi	r22, 0x0A	; 10
+   c:	70 e0       	ldi	r23, 0x00	; 0
+   e:	0e 94 00 00 	call	0	; 0x0 <_Z10correctPINv>
+  12:	0e 94 00 00 	call	0	; 0x0 <_Z10correctPINv>
+  16:	80 e0       	ldi	r24, 0x00	; 0
+  18:	90 e0       	ldi	r25, 0x00	; 0
+  1a:	60 e0       	ldi	r22, 0x00	; 0
+  1c:	70 e0       	ldi	r23, 0x00	; 0
+  1e:	0e 94 00 00 	call	0	; 0x0 <_Z10correctPINv>
+  22:	80 e0       	ldi	r24, 0x00	; 0
+  24:	90 e0       	ldi	r25, 0x00	; 0
+  26:	60 e0       	ldi	r22, 0x00	; 0
+  28:	70 e0       	ldi	r23, 0x00	; 0
+  2a:	0e 94 00 00 	call	0	; 0x0 <_Z10correctPINv>
+  2e:	68 eb       	ldi	r22, 0xB8	; 184
+  30:	7b e0       	ldi	r23, 0x0B	; 11
+  32:	80 e0       	ldi	r24, 0x00	; 0
+  34:	90 e0       	ldi	r25, 0x00	; 0
+  36:	0e 94 00 00 	call	0	; 0x0 <_Z10correctPINv>
+  3a:	10 92 00 00 	sts	0x0000, r1
+  3e:	10 92 00 00 	sts	0x0000, r1
+  42:	0e 94 00 00 	call	0	; 0x0 <_Z10correctPINv>
+  46:	60 91 00 00 	lds	r22, 0x0000
+  4a:	70 91 00 00 	lds	r23, 0x0000
+  4e:	70 95       	com	r23
+  50:	61 95       	neg	r22
+  52:	7f 4f       	sbci	r23, 0xFF	; 255
+  54:	c8 01       	movw	r24, r16
+  56:	0e 94 00 00 	call	0	; 0x0 <_Z10correctPINv>
+  5a:	68 ee       	ldi	r22, 0xE8	; 232
+  5c:	73 e0       	ldi	r23, 0x03	; 3
+  5e:	80 e0       	ldi	r24, 0x00	; 0
+  60:	90 e0       	ldi	r25, 0x00	; 0
+  62:	0e 94 00 00 	call	0	; 0x0 <_Z10correctPINv>
+  66:	0e 94 00 00 	call	0	; 0x0 <_Z10correctPINv>
+  6a:	c8 01       	movw	r24, r16
+  6c:	0e 94 00 00 	call	0	; 0x0 <_Z10correctPINv>
+  70:	1f 91       	pop	r17
+  72:	0f 91       	pop	r16
+  74:	08 95       	ret
+
+Disassembly of section .text._Z8checkPINv:
+
+00000000 <_Z8checkPINv>:
+   0:	80 91 00 00 	lds	r24, 0x0000
+   4:	83 33       	cpi	r24, 0x33	; 51
+   6:	01 f4       	brne	.+0      	; 0x8 <_Z8checkPINv+0x8>
+   8:	80 91 00 00 	lds	r24, 0x0000
+   c:	81 33       	cpi	r24, 0x31	; 49
+   e:	01 f4       	brne	.+0      	; 0x10 <_Z8checkPINv+0x10>
+  10:	80 91 00 00 	lds	r24, 0x0000
+  14:	83 33       	cpi	r24, 0x33	; 51
+  16:	01 f4       	brne	.+0      	; 0x18 <_Z8checkPINv+0x18>
+  18:	80 91 00 00 	lds	r24, 0x0000
+  1c:	83 33       	cpi	r24, 0x33	; 51
+  1e:	01 f4       	brne	.+0      	; 0x20 <_Z8checkPINv+0x20>
+  20:	80 91 00 00 	lds	r24, 0x0000
+  24:	87 33       	cpi	r24, 0x37	; 55
+  26:	01 f4       	brne	.+0      	; 0x28 <_Z8checkPINv+0x28>
+  28:	0e 94 00 00 	call	0	; 0x0 <_Z8checkPINv>
+  2c:	40 e0       	ldi	r20, 0x00	; 0
+  2e:	50 e0       	ldi	r21, 0x00	; 0
+  30:	20 e0       	ldi	r18, 0x00	; 0
+  32:	30 e0       	ldi	r19, 0x00	; 0
+  34:	f9 01       	movw	r30, r18
+  36:	e0 50       	subi	r30, 0x00	; 0
+  38:	f0 40       	sbci	r31, 0x00	; 0
+  3a:	d9 01       	movw	r26, r18
+  3c:	a0 50       	subi	r26, 0x00	; 0
+  3e:	b0 40       	sbci	r27, 0x00	; 0
+  40:	90 81       	ld	r25, Z
+  42:	8c 91       	ld	r24, X
+  44:	98 17       	cp	r25, r24
+  46:	01 f4       	brne	.+0      	; 0x48 <_Z8checkPINv+0x48>
+  48:	4f 5f       	subi	r20, 0xFF	; 255
+  4a:	5f 4f       	sbci	r21, 0xFF	; 255
+  4c:	2f 5f       	subi	r18, 0xFF	; 255
+  4e:	3f 4f       	sbci	r19, 0xFF	; 255
+  50:	26 30       	cpi	r18, 0x06	; 6
+  52:	31 05       	cpc	r19, r1
+  54:	01 f4       	brne	.+0      	; 0x56 <_Z8checkPINv+0x56>
+  56:	46 30       	cpi	r20, 0x06	; 6
+  58:	51 05       	cpc	r21, r1
+  5a:	01 f4       	brne	.+0      	; 0x5c <_Z8checkPINv+0x5c>
+  5c:	0e 94 00 00 	call	0	; 0x0 <_Z8checkPINv>
+  60:	08 95       	ret
+  62:	0e 94 00 00 	call	0	; 0x0 <_Z8checkPINv>
+  66:	08 95       	ret
+
+Disassembly of section .text._Z4lockv:
+
+00000000 <_Z4lockv>:
+   0:	0f 93       	push	r16
+   2:	1f 93       	push	r17
+   4:	00 e0       	ldi	r16, 0x00	; 0
+   6:	10 e0       	ldi	r17, 0x00	; 0
+   8:	c8 01       	movw	r24, r16
+   a:	6a e0       	ldi	r22, 0x0A	; 10
+   c:	70 e0       	ldi	r23, 0x00	; 0
+   e:	0e 94 00 00 	call	0	; 0x0 <_Z4lockv>
+  12:	0e 94 00 00 	call	0	; 0x0 <_Z4lockv>
+  16:	81 e0       	ldi	r24, 0x01	; 1
+  18:	90 e0       	ldi	r25, 0x00	; 0
+  1a:	90 93 00 00 	sts	0x0000, r25
+  1e:	80 93 00 00 	sts	0x0000, r24
+  22:	80 e0       	ldi	r24, 0x00	; 0
+  24:	90 e0       	ldi	r25, 0x00	; 0
+  26:	60 e0       	ldi	r22, 0x00	; 0
+  28:	70 e0       	ldi	r23, 0x00	; 0
+  2a:	0e 94 00 00 	call	0	; 0x0 <_Z4lockv>
+  2e:	80 e0       	ldi	r24, 0x00	; 0
+  30:	90 e0       	ldi	r25, 0x00	; 0
+  32:	60 e0       	ldi	r22, 0x00	; 0
+  34:	70 e0       	ldi	r23, 0x00	; 0
+  36:	0e 94 00 00 	call	0	; 0x0 <_Z4lockv>
+  3a:	60 91 00 00 	lds	r22, 0x0000
+  3e:	70 91 00 00 	lds	r23, 0x0000
+  42:	c8 01       	movw	r24, r16
+  44:	0e 94 00 00 	call	0	; 0x0 <_Z4lockv>
+  48:	0e 94 00 00 	call	0	; 0x0 <_Z4lockv>
+  4c:	68 ee       	ldi	r22, 0xE8	; 232
+  4e:	73 e0       	ldi	r23, 0x03	; 3
+  50:	80 e0       	ldi	r24, 0x00	; 0
+  52:	90 e0       	ldi	r25, 0x00	; 0
+  54:	0e 94 00 00 	call	0	; 0x0 <_Z4lockv>
+  58:	0e 94 00 00 	call	0	; 0x0 <_Z4lockv>
+  5c:	c8 01       	movw	r24, r16
+  5e:	0e 94 00 00 	call	0	; 0x0 <_Z4lockv>
+  62:	1f 91       	pop	r17
+  64:	0f 91       	pop	r16
+  66:	08 95       	ret
+
+Disassembly of section .text._Z10readKeypadv:
+
+00000000 <_Z10readKeypadv>:
+   0:	80 e0       	ldi	r24, 0x00	; 0
+   2:	90 e0       	ldi	r25, 0x00	; 0
+   4:	0e 94 00 00 	call	0	; 0x0 <_Z10readKeypadv>
+   8:	89 2b       	or	r24, r25
+   a:	01 f4       	brne	.+0      	; 0xc <_Z10readKeypadv+0xc>
+   c:	00 c0       	rjmp	.+0      	; 0xe <_Z10readKeypadv+0xe>
+   e:	80 e0       	ldi	r24, 0x00	; 0
+  10:	90 e0       	ldi	r25, 0x00	; 0
+  12:	0e 94 00 00 	call	0	; 0x0 <_Z10readKeypadv>
+  16:	88 23       	and	r24, r24
+  18:	01 f4       	brne	.+0      	; 0x1a <_Z10readKeypadv+0x1a>
+  1a:	00 c0       	rjmp	.+0      	; 0x1c <_Z10readKeypadv+0x1c>
+  1c:	85 33       	cpi	r24, 0x35	; 53
+  1e:	01 f4       	brne	.+0      	; 0x20 <_Z10readKeypadv+0x20>
+  20:	00 c0       	rjmp	.+0      	; 0x22 <_Z10readKeypadv+0x22>
+  22:	86 33       	cpi	r24, 0x36	; 54
+  24:	04 f4       	brge	.+0      	; 0x26 <_Z10readKeypadv+0x26>
+  26:	82 33       	cpi	r24, 0x32	; 50
+  28:	01 f4       	brne	.+0      	; 0x2a <_Z10readKeypadv+0x2a>
+  2a:	00 c0       	rjmp	.+0      	; 0x2c <_Z10readKeypadv+0x2c>
+  2c:	83 33       	cpi	r24, 0x33	; 51
+  2e:	04 f4       	brge	.+0      	; 0x30 <_Z10readKeypadv+0x30>
+  30:	8a 32       	cpi	r24, 0x2A	; 42
+  32:	01 f0       	breq	.+0      	; 0x34 <_Z10readKeypadv+0x34>
+  34:	81 33       	cpi	r24, 0x31	; 49
+  36:	01 f0       	breq	.+0      	; 0x38 <_Z10readKeypadv+0x38>
+  38:	83 32       	cpi	r24, 0x23	; 35
+  3a:	01 f0       	breq	.+0      	; 0x3c <_Z10readKeypadv+0x3c>
+  3c:	00 c0       	rjmp	.+0      	; 0x3e <_Z10readKeypadv+0x3e>
+  3e:	00 c0       	rjmp	.+0      	; 0x40 <_Z10readKeypadv+0x40>
+  40:	83 33       	cpi	r24, 0x33	; 51
+  42:	01 f4       	brne	.+0      	; 0x44 <_Z10readKeypadv+0x44>
+  44:	00 c0       	rjmp	.+0      	; 0x46 <_Z10readKeypadv+0x46>
+  46:	84 33       	cpi	r24, 0x34	; 52
+  48:	01 f0       	breq	.+0      	; 0x4a <_Z10readKeypadv+0x4a>
+  4a:	00 c0       	rjmp	.+0      	; 0x4c <_Z10readKeypadv+0x4c>
+  4c:	00 c0       	rjmp	.+0      	; 0x4e <_Z10readKeypadv+0x4e>
+  4e:	88 33       	cpi	r24, 0x38	; 56
+  50:	01 f4       	brne	.+0      	; 0x52 <_Z10readKeypadv+0x52>
+  52:	00 c0       	rjmp	.+0      	; 0x54 <_Z10readKeypadv+0x54>
+  54:	89 33       	cpi	r24, 0x39	; 57
+  56:	04 f4       	brge	.+0      	; 0x58 <_Z10readKeypadv+0x58>
+  58:	86 33       	cpi	r24, 0x36	; 54
+  5a:	01 f4       	brne	.+0      	; 0x5c <_Z10readKeypadv+0x5c>
+  5c:	00 c0       	rjmp	.+0      	; 0x5e <_Z10readKeypadv+0x5e>
+  5e:	87 33       	cpi	r24, 0x37	; 55
+  60:	01 f0       	breq	.+0      	; 0x62 <_Z10readKeypadv+0x62>
+  62:	00 c0       	rjmp	.+0      	; 0x64 <_Z10readKeypadv+0x64>
+  64:	00 c0       	rjmp	.+0      	; 0x66 <_Z10readKeypadv+0x66>
+  66:	89 33       	cpi	r24, 0x39	; 57
+  68:	01 f4       	brne	.+0      	; 0x6a <_Z10readKeypadv+0x6a>
+  6a:	00 c0       	rjmp	.+0      	; 0x6c <_Z10readKeypadv+0x6c>
+  6c:	80 34       	cpi	r24, 0x40	; 64
+  6e:	01 f0       	breq	.+0      	; 0x70 <_Z10readKeypadv+0x70>
+  70:	00 c0       	rjmp	.+0      	; 0x72 <_Z10readKeypadv+0x72>
+  72:	00 c0       	rjmp	.+0      	; 0x74 <_Z10readKeypadv+0x74>
+  74:	10 92 00 00 	sts	0x0000, r1
+  78:	10 92 00 00 	sts	0x0000, r1
+  7c:	0e 94 00 00 	call	0	; 0x0 <_Z10readKeypadv>
+  80:	08 95       	ret
+  82:	64 e6       	ldi	r22, 0x64	; 100
+  84:	70 e0       	ldi	r23, 0x00	; 0
+  86:	80 e0       	ldi	r24, 0x00	; 0
+  88:	90 e0       	ldi	r25, 0x00	; 0
+  8a:	0e 94 00 00 	call	0	; 0x0 <_Z10readKeypadv>
+  8e:	0e 94 00 00 	call	0	; 0x0 <_Z10readKeypadv>
+  92:	08 95       	ret
+  94:	80 91 00 00 	lds	r24, 0x0000
+  98:	90 91 00 00 	lds	r25, 0x0000
+  9c:	01 97       	sbiw	r24, 0x01	; 1
+  9e:	01 f4       	brne	.+0      	; 0xa0 <_Z10readKeypadv+0xa0>
+  a0:	00 c0       	rjmp	.+0      	; 0xa2 <_Z10readKeypadv+0xa2>
+  a2:	0e 94 00 00 	call	0	; 0x0 <_Z10readKeypadv>
+  a6:	08 95       	ret
+  a8:	e0 91 00 00 	lds	r30, 0x0000
+  ac:	f0 91 00 00 	lds	r31, 0x0000
+  b0:	e0 50       	subi	r30, 0x00	; 0
+  b2:	f0 40       	sbci	r31, 0x00	; 0
+  b4:	80 83       	st	Z, r24
+  b6:	80 e0       	ldi	r24, 0x00	; 0
+  b8:	90 e0       	ldi	r25, 0x00	; 0
+  ba:	61 e3       	ldi	r22, 0x31	; 49
+  bc:	00 c0       	rjmp	.+0      	; 0xbe <_Z10readKeypadv+0xbe>
+  be:	e0 91 00 00 	lds	r30, 0x0000
+  c2:	f0 91 00 00 	lds	r31, 0x0000
+  c6:	e0 50       	subi	r30, 0x00	; 0
+  c8:	f0 40       	sbci	r31, 0x00	; 0
+  ca:	80 83       	st	Z, r24
+  cc:	80 e0       	ldi	r24, 0x00	; 0
+  ce:	90 e0       	ldi	r25, 0x00	; 0
+  d0:	62 e3       	ldi	r22, 0x32	; 50
+  d2:	00 c0       	rjmp	.+0      	; 0xd4 <_Z10readKeypadv+0xd4>
+  d4:	e0 91 00 00 	lds	r30, 0x0000
+  d8:	f0 91 00 00 	lds	r31, 0x0000
+  dc:	e0 50       	subi	r30, 0x00	; 0
+  de:	f0 40       	sbci	r31, 0x00	; 0
+  e0:	80 83       	st	Z, r24
+  e2:	80 e0       	ldi	r24, 0x00	; 0
+  e4:	90 e0       	ldi	r25, 0x00	; 0
+  e6:	63 e3       	ldi	r22, 0x33	; 51
+  e8:	00 c0       	rjmp	.+0      	; 0xea <_Z10readKeypadv+0xea>
+  ea:	e0 91 00 00 	lds	r30, 0x0000
+  ee:	f0 91 00 00 	lds	r31, 0x0000
+  f2:	e0 50       	subi	r30, 0x00	; 0
+  f4:	f0 40       	sbci	r31, 0x00	; 0
+  f6:	80 83       	st	Z, r24
+  f8:	80 e0       	ldi	r24, 0x00	; 0
+  fa:	90 e0       	ldi	r25, 0x00	; 0
+  fc:	64 e3       	ldi	r22, 0x34	; 52
+  fe:	00 c0       	rjmp	.+0      	; 0x100 <_Z10readKeypadv+0x100>
+ 100:	e0 91 00 00 	lds	r30, 0x0000
+ 104:	f0 91 00 00 	lds	r31, 0x0000
+ 108:	e0 50       	subi	r30, 0x00	; 0
+ 10a:	f0 40       	sbci	r31, 0x00	; 0
+ 10c:	80 83       	st	Z, r24
+ 10e:	80 e0       	ldi	r24, 0x00	; 0
+ 110:	90 e0       	ldi	r25, 0x00	; 0
+ 112:	65 e3       	ldi	r22, 0x35	; 53
+ 114:	00 c0       	rjmp	.+0      	; 0x116 <_Z10readKeypadv+0x116>
+ 116:	e0 91 00 00 	lds	r30, 0x0000
+ 11a:	f0 91 00 00 	lds	r31, 0x0000
+ 11e:	e0 50       	subi	r30, 0x00	; 0
+ 120:	f0 40       	sbci	r31, 0x00	; 0
+ 122:	80 83       	st	Z, r24
+ 124:	80 e0       	ldi	r24, 0x00	; 0
+ 126:	90 e0       	ldi	r25, 0x00	; 0
+ 128:	66 e3       	ldi	r22, 0x36	; 54
+ 12a:	00 c0       	rjmp	.+0      	; 0x12c <_Z10readKeypadv+0x12c>
+ 12c:	e0 91 00 00 	lds	r30, 0x0000
+ 130:	f0 91 00 00 	lds	r31, 0x0000
+ 134:	e0 50       	subi	r30, 0x00	; 0
+ 136:	f0 40       	sbci	r31, 0x00	; 0
+ 138:	80 83       	st	Z, r24
+ 13a:	80 e0       	ldi	r24, 0x00	; 0
+ 13c:	90 e0       	ldi	r25, 0x00	; 0
+ 13e:	67 e3       	ldi	r22, 0x37	; 55
+ 140:	00 c0       	rjmp	.+0      	; 0x142 <_Z10readKeypadv+0x142>
+ 142:	e0 91 00 00 	lds	r30, 0x0000
+ 146:	f0 91 00 00 	lds	r31, 0x0000
+ 14a:	e0 50       	subi	r30, 0x00	; 0
+ 14c:	f0 40       	sbci	r31, 0x00	; 0
+ 14e:	80 83       	st	Z, r24
+ 150:	80 e0       	ldi	r24, 0x00	; 0
+ 152:	90 e0       	ldi	r25, 0x00	; 0
+ 154:	68 e3       	ldi	r22, 0x38	; 56
+ 156:	00 c0       	rjmp	.+0      	; 0x158 <_Z10readKeypadv+0x158>
+ 158:	e0 91 00 00 	lds	r30, 0x0000
+ 15c:	f0 91 00 00 	lds	r31, 0x0000
+ 160:	e0 50       	subi	r30, 0x00	; 0
+ 162:	f0 40       	sbci	r31, 0x00	; 0
+ 164:	80 83       	st	Z, r24
+ 166:	80 e0       	ldi	r24, 0x00	; 0
+ 168:	90 e0       	ldi	r25, 0x00	; 0
+ 16a:	69 e3       	ldi	r22, 0x39	; 57
+ 16c:	0e 94 00 00 	call	0	; 0x0 <_Z10readKeypadv>
+ 170:	80 91 00 00 	lds	r24, 0x0000
+ 174:	90 91 00 00 	lds	r25, 0x0000
+ 178:	01 96       	adiw	r24, 0x01	; 1
+ 17a:	90 93 00 00 	sts	0x0000, r25
+ 17e:	80 93 00 00 	sts	0x0000, r24
+ 182:	08 95       	ret
+ 184:	80 e0       	ldi	r24, 0x00	; 0
+ 186:	90 e0       	ldi	r25, 0x00	; 0
+ 188:	60 e0       	ldi	r22, 0x00	; 0
+ 18a:	70 e0       	ldi	r23, 0x00	; 0
+ 18c:	0e 94 00 00 	call	0	; 0x0 <_Z10readKeypadv>
+ 190:	68 ec       	ldi	r22, 0xC8	; 200
+ 192:	70 e0       	ldi	r23, 0x00	; 0
+ 194:	80 e0       	ldi	r24, 0x00	; 0
+ 196:	90 e0       	ldi	r25, 0x00	; 0
+ 198:	0e 94 00 00 	call	0	; 0x0 <_Z10readKeypadv>
+ 19c:	0e 94 00 00 	call	0	; 0x0 <_Z10readKeypadv>
+ 1a0:	08 95       	ret
+
+Disassembly of section .text.loop:
+
+00000000 <loop>:
+   0:	89 e0       	ldi	r24, 0x09	; 9
+   2:	0e 94 00 00 	call	0	; 0x0 <loop>
+   6:	89 2b       	or	r24, r25
+   8:	01 f4       	brne	.+0      	; 0xa <loop+0xa>
+   a:	80 91 00 00 	lds	r24, 0x0000
+   e:	90 91 00 00 	lds	r25, 0x0000
+  12:	01 97       	sbiw	r24, 0x01	; 1
+  14:	01 f0       	breq	.+0      	; 0x16 <loop+0x16>
+  16:	0e 94 00 00 	call	0	; 0x0 <loop>
+  1a:	0e 94 00 00 	call	0	; 0x0 <loop>
+  1e:	08 95       	ret
+
+Disassembly of section .text.setup:
+
+00000000 <setup>:
+   0:	86 e0       	ldi	r24, 0x06	; 6
+   2:	61 e0       	ldi	r22, 0x01	; 1
+   4:	0e 94 00 00 	call	0	; 0x0 <setup>
+   8:	85 e0       	ldi	r24, 0x05	; 5
+   a:	61 e0       	ldi	r22, 0x01	; 1
+   c:	0e 94 00 00 	call	0	; 0x0 <setup>
+  10:	89 e0       	ldi	r24, 0x09	; 9
+  12:	60 e0       	ldi	r22, 0x00	; 0
+  14:	0e 94 00 00 	call	0	; 0x0 <setup>
+  18:	81 e3       	ldi	r24, 0x31	; 49
+  1a:	80 93 00 00 	sts	0x0000, r24
+  1e:	86 e3       	ldi	r24, 0x36	; 54
+  20:	80 93 00 00 	sts	0x0000, r24
+  24:	84 e3       	ldi	r24, 0x34	; 52
+  26:	80 93 00 00 	sts	0x0000, r24
+  2a:	88 e3       	ldi	r24, 0x38	; 56
+  2c:	80 93 00 00 	sts	0x0000, r24
+  30:	87 e3       	ldi	r24, 0x37	; 55
+  32:	80 93 00 00 	sts	0x0000, r24
+  36:	80 93 00 00 	sts	0x0000, r24
+  3a:	80 e0       	ldi	r24, 0x00	; 0
+  3c:	90 e0       	ldi	r25, 0x00	; 0
+  3e:	40 e8       	ldi	r20, 0x80	; 128
+  40:	55 e2       	ldi	r21, 0x25	; 37
+  42:	60 e0       	ldi	r22, 0x00	; 0
+  44:	70 e0       	ldi	r23, 0x00	; 0
+  46:	0e 94 00 00 	call	0	; 0x0 <setup>
+  4a:	0e 94 00 00 	call	0	; 0x0 <setup>
+  4e:	80 e0       	ldi	r24, 0x00	; 0
+  50:	90 e0       	ldi	r25, 0x00	; 0
+  52:	40 e8       	ldi	r20, 0x80	; 128
+  54:	55 e2       	ldi	r21, 0x25	; 37
+  56:	60 e0       	ldi	r22, 0x00	; 0
+  58:	70 e0       	ldi	r23, 0x00	; 0
+  5a:	0e 94 00 00 	call	0	; 0x0 <setup>
+  5e:	64 ef       	ldi	r22, 0xF4	; 244
+  60:	71 e0       	ldi	r23, 0x01	; 1
+  62:	80 e0       	ldi	r24, 0x00	; 0
+  64:	90 e0       	ldi	r25, 0x00	; 0
+  66:	0e 94 00 00 	call	0	; 0x0 <setup>
+  6a:	0e 94 00 00 	call	0	; 0x0 <setup>
+  6e:	08 95       	ret
